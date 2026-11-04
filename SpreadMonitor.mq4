@@ -150,7 +150,7 @@ void UpdateDashboard(double curSpread, double avgSpread, double maxSpread)
       ObjectSetString(0, objName, OBJPROP_FONT, "Consolas");
    }
 
-   string text = StringFormat("Current: " + g_digitsFormat + " %s | Bar Avg: %.1f %s | Bar Max: " + g_digitsFormat + " %s | Samples: %s Ticks",
+   string text = StringFormat("Cur:" + g_digitsFormat + "%s | Avg:%.1f%s | Max:" + g_digitsFormat + "%s | Ticks:%s",
                               curSpread, g_unitName,
                               avgSpread, g_unitName,
                               maxSpread, g_unitName,
